@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahore Darbar | Authentic Pakistani Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="spice-spinner"></div>
+            <h2>Lahore Darbar</h2>
+            <p>Loading authentic flavors...</p>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923001234567?text=Assalamualaikum!%20I%20would%20like%20to%20make%20a%20reservation%20or%20order%20from%20Lahore%20Darbar." 
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🍛</span>
+                <span class="logo-text">Lahore<span>Darbar</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/923001234567" class="btn-reserve" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Reserve
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">★ Authentic Pakistani Flavors ★</div>
+            <h1 class="animate-fade-up delay-1">
+                Taste the <span class="gold">Royal</span><br>
+                Heritage of Pakistan
+            </h1>
+            <p class="hero-subtitle animate-fade-up delay-2">
+                From the streets of Lahore to your table — Biryani, Nihari, Kebabs & more, 
+                cooked with traditional recipes and pure passion.
+            </p>
+            <div class="hero-btns animate-fade-up delay-3">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="https://wa.me/923001234567" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+            <div class="hero-stats animate-fade-up delay-4">
+                <div class="stat">
+                    <span class="stat-num" data-count="15">0</span>+
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-count="50">0</span>+
+                    <span class="stat-label">Dishes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-count="10">0</span>k+
+                    <span class="stat-label">Happy Guests</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Story</span>
+                <h2>A Legacy of <span class="gold">Flavor</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="images/restaurant.jpg" alt="Pakistani Cuisine">
+                        <div class="about-badge">
+                            <span>Since</span>
+                            <strong>2009</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Welcome to Lahore Darbar</h3>
+                    <p>
+                        Born in the heart of Lahore, our restaurant brings the authentic taste of 
+                        Pakistani hospitality and centuries-old recipes. Every dish is prepared with 
+                        carefully selected spices, slow-cooked meats, and the love of traditional cooking.
+                    </p>
+                    <p>
+                        From the aromatic layers of our signature Biryani to the rich, slow-cooked Nihari 
+                        and perfectly grilled Seekh Kebabs — we serve the soul of Pakistan on every plate.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Traditional Tandoor</h4>
+                                <p>Clay oven perfection</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Daily market fresh</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Family Recipes</h4>
+                                <p>Passed through generations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Menu</span>
+                <h2>Signature <span class="gold">Dishes</span></h2>
+                <p class="section-desc">Handcrafted with authentic spices and pure love</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="biryani">Biryani & Rice</button>
+                <button class="tab-btn" data-tab="curry">Curries</button>
+                <button class="tab-btn" data-tab="grill">Grill & BBQ</button>
+                <button class="tab-btn" data-tab="sides">Sides & Breads</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Biryani -->
+                <div class="menu-grid active" id="biryani">
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/biryani.jpg" alt="Chicken Biryani">
+                            <span class="menu-badge">Bestseller</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Chicken Dum Biryani</h3>
+                                <span class="price">Rs. 650</span>
+                            </div>
+                            <p>Fragrant basmati rice layered with tender chicken, saffron & authentic spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/mutton-biryani.jpg" alt="Mutton Biryani">
+                            <span class="menu-badge hot">Spicy</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Mutton Biryani</h3>
+                                <span class="price">Rs. 850</span>
+                            </div>
+                            <p>Slow-cooked mutton with premium basmati, pure ghee & traditional masala.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/beef-biryani.jpg" alt="Beef Biryani">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Beef Biryani</h3>
+                                <span class="price">Rs. 750</span>
+                            </div>
+                            <p>Rich beef chunks cooked to perfection with aromatic rice & whole spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/vegetable-rice (1).jpg" alt="Vegetable Biryani">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Vegetable rice</h3>
+                                <span class="price">Rs. 450</span>
+                            </div>
+                            <p>Garden-fresh vegetables layered with fragrant rice & mild spices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curries -->
+                <div class="menu-grid" id="curry">
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/nihari.jpg" alt="Nihari">
+                            <span class="menu-badge">Signature</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Beef Nihari</h3>
+                                <span class="price">Rs. 700</span>
+                            </div>
+                            <p>Slow-cooked overnight beef shank in rich, spicy gravy — a Lahori classic.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/chicken-karahi.jpg" alt="Karahi">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Chicken Karahi</h3>
+                                <span class="price">Rs. 900</span>
+                            </div>
+                            <p>Tomato-based karahi with green chillies, ginger & fresh coriander.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/chicken-breast.jpg" alt=" Chicken breast">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Chicken Breast</h3>
+                                <span class="price">Rs. 550</span>
+                            </div>
+                            <p>Slow-cooked wheat, & full of flavor.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/paye.jpg" alt="Paye">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Mutton Paye</h3>
+                                <span class="price">Rs. 800</span>
+                            </div>
+                            <p>Traditional trotters soup, slow-simmered for hours with special spices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grill -->
+                <div class="menu-grid" id="grill">
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/seekh-kebab.jpg" alt="Seekh Kebab">
+                            <span class="menu-badge">Popular</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Seekh Kebab</h3>
+                                <span class="price">Rs. 450</span>
+                            </div>
+                            <p>Minced meat skewers grilled over charcoal with classic desi spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/chicken-tikka.jpg" alt="Chicken Tikka">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Chicken Tikka</h3>
+                                <span class="price">Rs. 600</span>
+                            </div>
+                            <p>Marinated chicken pieces grilled to smoky perfection in the tandoor.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/malai-boti.jpg" alt="Malai Boti">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Malai Boti</h3>
+                                <span class="price">Rs. 650</span>
+                            </div>
+                            <p>Creamy, mild yogurt-marinated chicken — soft & melt-in-mouth.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/lamb-chops.jpg" alt="Lamb Chops">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Lamb Chops</h3>
+                                <span class="price">Rs. 1200</span>
+                            </div>
+                            <p>Premium lamb chops marinated overnight & grilled with pure ghee.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-grid" id="sides">
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/naan.jpg" alt="Naan">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Butter Naan</h3>
+                                <span class="price">Rs. 80</span>
+                            </div>
+                            <p>Soft tandoori naan brushed with pure butter.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/Laccha-Paratha.jpg" alt="Paratha">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Laccha Paratha</h3>
+                                <span class="price">Rs. 100</span>
+                            </div>
+                            <p>Flaky, multi-layered paratha made with pure ghee.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/raita.jpg" alt="Raita">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Boondi Raita</h3>
+                                <span class="price">Rs. 120</span>
+                            </div>
+                            <p>Cool yogurt with crispy boondi & mild spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">
+                            <img src="images/salad.jpg" alt="Salad">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-top">
+                                <h3>Kachumber Salad</h3>
+                                <span class="price">Rs. 150</span>
+                            </div>
+                            <p>Fresh cucumber, onion, tomato with lemon & chaat masala.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2>A Feast for the <span class="gold">Eyes</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/biryani.jpg" alt="Biryani">
+                    <div class="gallery-overlay">
+                        <h4>Signature Biryani</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/seekh-kebab.jpg" alt="Kebab">
+                    <div class="gallery-overlay">
+                        <h4>Seekh Kebab</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/nihari.jpg" alt="Nihari">
+                    <div class="gallery-overlay">
+                        <h4>Beef Nihari</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/chicken-tikka.jpg" alt="Tikka">
+                    <div class="gallery-overlay">
+                        <h4>Chicken Tikka</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/karahi.jpg" alt="Karahi">
+                    <div class="gallery-overlay">
+                        <h4>Chicken Karahi</h4>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="images/restaurant.jpg" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <h4>Our Ambiance</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reviews</span>
+                <h2>What Our <span class="gold">Guests</span> Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best Biryani in the city! The aroma alone takes me back to Lahore. Highly recommended."</p>
+                        <div class="author">
+                            <strong>Ahmed Raza</strong>
+                            <span>Regular Guest</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The Nihari is pure magic. Slow-cooked perfection. Staff is warm and welcoming."</p>
+                        <div class="author">
+                            <strong>Fatima Khan</strong>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Authentic Pakistani taste with modern presentation. Our family's favorite spot!"</p>
+                        <div class="author">
+                            <strong>Usman Ali</strong>
+                            <span>Family Diners</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Visit Us or <span class="gold">Order</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Main Boulevard, Gulberg III<br>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Mon – Sun: 12:00 PM – 12:00 AM<br>Friday: 2:00 PM – 12:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+92 300 123 4567<br>+92 42 3577 8899</p>
+                        </div>
+                    </div>
+                    <div class="contact-card whatsapp-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp Order</h4>
+                            <p>Quick orders & reservations</p>
+                            <a href="https://wa.me/923001234567" class="btn btn-whatsapp" target="_blank">
+                                Chat Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send a Message</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message or Reservation Request" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">🍛</span>
+                        <span class="logo-text">Lahore<span>Darbar</span></span>
+                    </a>
+                    <p>Bringing the authentic taste of Pakistan to your table since 2009.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/923001234567" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Popular Dishes</h4>
+                    <ul>
+                        <li><a href="#menu">Chicken Biryani</a></li>
+                        <li><a href="#menu">Beef Nihari</a></li>
+                        <li><a href="#menu">Seekh Kebab</a></li>
+                        <li><a href="#menu">Chicken Karahi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get special offers & new menu items</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Lahore Darbar. All rights reserved. | Demo Website for Pakistani Restaurant</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
